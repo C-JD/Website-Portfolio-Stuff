@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📬 Postcards from Treorchy</title>
+    <link rel="stylesheet" href="postcards.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">← Back to Hub</a>
+            <h2>📬 Postcards from Treorchy</h2>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Greetings from the Valleys</h1>
+            <p>Send a piece of Welsh charm anywhere in the world. Each postcard tells a story of our beautiful corner of Wales.</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="postcard-creator">
+            <h2>✨ Create Your Postcard</h2>
+            
+            <div class="creator-container">
+                <div class="postcard-preview">
+                    <div class="postcard front">
+                        <div class="postcard-image">
+                            <img src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Welsh Valley" id="preview-image">
+                        </div>
+                        <div class="postcard-title" id="preview-title">Greetings from Treorchy</div>
+                        <div class="postcard-fact" id="preview-fact">Did you know? Treorchy is home to one of Wales' most famous male voice choirs!</div>
+                    </div>
+                    
+                    <div class="postcard back">
+                        <div class="postcard-header">
+                            <h3>📬 Postcard from Treorchy</h3>
+                            <div class="stamp">🏴󠁧󠁢󠁷󠁬󠁳󠁿</div>
+                        </div>
+                        <div class="message-area">
+                            <div class="message-text" id="preview-message">Shwmae! Sending you warm wishes from the beautiful Rhondda Valley...</div>
+                        </div>
+                        <div class="address-area">
+                            <div class="address-line">To: <span id="preview-recipient">A Friend</span></div>
+                            <div class="address-line">From: <span id="preview-sender">The Valleys</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="creator-controls">
+                    <div class="control-section">
+                        <h3>🖼️ Choose Design</h3>
+                        <div class="design-options">
+                            <div class="design-option active" data-image="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=600" data-title="Greetings from Treorchy" data-fact="Did you know? Treorchy is home to one of Wales' most famous male voice choirs!">
+                                <img src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Valley View">
+                                <span>Valley Vista</span>
+                            </div>
+                            <div class="design-option" data-image="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=600" data-title="Welsh Castle Charm" data-fact="Wales has more castles per square mile than any other country in Europe!">
+                                <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Welsh Castle">
+                                <span>Castle Dreams</span>
+                            </div>
+                            <div class="design-option" data-image="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=600" data-title="Coastal Wales" data-fact="The Wales Coast Path is 870 miles long - the world's first dedicated coastal path!">
+                                <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Welsh Coast">
+                                <span>Coastal Beauty</span>
+                            </div>
+                            <div class="design-option" data-image="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=600" data-title="Mountain Majesty" data-fact="Snowdon is 1,085 meters high and its Welsh name 'Yr Wyddfa' means 'the tumulus'!">
+                                <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=150" alt="Welsh Mountains">
+                                <span>Mountain High</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-section">
+                        <h3>✍️ Personalize Message</h3>
+                        <div class="form-group">
+                            <label for="message-input">Your Message</label>
+                            <textarea id="message-input" rows="4" placeholder="Write your message here...">Shwmae! Sending you warm wishes from the beautiful Rhondda Valley...</textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="recipient-input">To</label>
+                                <input type="text" id="recipient-input" placeholder="Recipient name" value="A Friend">
+                            </div>
+                            <div class="form-group">
+                                <label for="sender-input">From</label>
+                                <input type="text" id="sender-input" placeholder="Your name" value="The Valleys">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="control-section">
+                        <h3>📤 Send Options</h3>
+                        <div class="send-options">
+                            <button class="btn-option digital">📧 Send Digital</button>
+                            <button class="btn-option print">🖨️ Print at Home</button>
+                            <button class="btn-option mail">📮 Mail Physical Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="postcard-gallery">
+            <h2>🎨 Postcard Gallery</h2>
+            <p>Explore our collection of Welsh-themed postcards, each with its own quirky fact!</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Rhondda Valley">
+                    <div class="card-info">
+                        <h4>Rhondda Valley Views</h4>
+                        <p class="quirky-fact">💡 <strong>Quirky Fact:</strong> The Rhondda Valley was once called "Little America" due to its coal mining boom!</p>
+                        <button class="use-design">Use This Design</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-card">
+                    <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Welsh Castle">
+                    <div class="card-info">
+                        <h4>Castell Coch Magic</h4>
+                        <p class="quirky-fact">💡 <strong>Quirky Fact:</strong> Castell Coch was rebuilt as a Victorian fantasy - it's more fairy tale than fortress!</p>
+                        <button class="use-design">Use This Design</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-card">
+                    <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Welsh Coast">
+                    <div class="card-info">
+                        <h4>Pembrokeshire Paradise</h4>
+                        <p class="quirky-fact">💡 <strong>Quirky Fact:</strong> Pembrokeshire's coast is so clean, it's home to grey seals, dolphins, and porpoises!</p>
+                        <button class="use-design">Use This Design</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-card">
+                    <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Snowdonia">
+                    <div class="card-info">
+                        <h4>Snowdonia Splendor</h4>
+                        <p class="quirky-fact">💡 <strong>Quirky Fact:</strong> Snowdonia has more 3,000ft peaks than the rest of England and Wales combined!</p>
+                        <button class="use-design">Use This Design</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-card">
+                    <img src="https://images.pexels.com/photos/1450082/pexels-photo-1450082.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Welsh Sheep">
+                    <div class="card-info">
+                        <h4>Woolly Welsh Wonders</h4>
+                        <p class="quirky-fact">💡 <strong>Quirky Fact:</strong> There are more sheep than people in Wales - about 3 sheep for every person!</p>
+                        <button class="use-design">Use This Design</button>
+                    </div>
+                </div>
+                
+                <div class="gallery-card">
+                    <img src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Welsh Village">
+                    <div class="card-info">
+                        <h4>Village Charm</h4>
+                        <p class="quirky-fact">💡 <strong>Quirky Fact:</strong> The longest place name in Europe is in Wales: Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch!</p>
+                        <button class="use-design">Use This Design</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="welsh-phrases">
+            <h2>🗣️ Welsh Phrases for Your Postcards</h2>
+            <div class="phrases-grid">
+                <div class="phrase-card">
+                    <div class="welsh">Shwmae!</div>
+                    <div class="english">Hello! / How are you?</div>
+                    <div class="pronunciation">(SHOO-my)</div>
+                </div>
+                <div class="phrase-card">
+                    <div class="welsh">Hwyl fawr!</div>
+                    <div class="english">Goodbye!</div>
+                    <div class="pronunciation">(HOO-il vow-r)</div>
+                </div>
+                <div class="phrase-card">
+                    <div class="welsh">Cariad</div>
+                    <div class="english">Love / Darling</div>
+                    <div class="pronunciation">(CAR-ee-ad)</div>
+                </div>
+                <div class="phrase-card">
+                    <div class="welsh">Hiraeth</div>
+                    <div class="english">Longing for home</div>
+                    <div class="pronunciation">(HEER-eyeth)</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

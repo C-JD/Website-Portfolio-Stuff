@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🕹️ "What If?" Simulator</title>
+    <link rel="stylesheet" href="whatif.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">← Back to Hub</a>
+            <h2>🕹️ "What If?" Simulator</h2>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Explore Impossible Possibilities</h1>
+            <p>What if the ordinary became extraordinary? Dive into creative scenarios and shape your own adventure.</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="scenario-selector">
+            <h2>🎭 Choose Your Adventure</h2>
+            <div class="scenarios-grid">
+                <div class="scenario-card active" data-scenario="eurovision">
+                    <div class="scenario-icon">🎤</div>
+                    <h3>Eurovision in Treorchy</h3>
+                    <p>What if Treorchy hosted Eurovision? Navigate the chaos and glory!</p>
+                </div>
+                
+                <div class="scenario-card" data-scenario="dragon">
+                    <div class="scenario-icon">🐉</div>
+                    <h3>Dragon Returns to Wales</h3>
+                    <p>A real dragon appears in the Brecon Beacons. What happens next?</p>
+                </div>
+                
+                <div class="scenario-card" data-scenario="timetravel">
+                    <div class="scenario-icon">⏰</div>
+                    <h3>Victorian Cardiff Time Portal</h3>
+                    <p>You discover a time portal in Cardiff Castle. Where do you go?</p>
+                </div>
+                
+                <div class="scenario-card" data-scenario="underwater">
+                    <div class="scenario-icon">🌊</div>
+                    <h3>Underwater Welsh City</h3>
+                    <p>Climate change floods Wales, but we adapt. Build your aquatic community!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-player">
+            <div class="story-container">
+                <div class="story-header">
+                    <h3 id="story-title">🎤 Eurovision Comes to Treorchy</h3>
+                    <div class="story-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">Chapter 1 of 5</span>
+                    </div>
+                </div>
+                
+                <div class="story-content">
+                    <div class="story-scene">
+                        <div class="scene-image">🏟️</div>
+                        <div class="scene-text" id="scene-text">
+                            <p>It's 6 AM on a Tuesday when the phone rings. The BBC is on the line with news that will change Treorchy forever: due to a series of unprecedented events, your small Welsh town has been chosen to host Eurovision 2025!</p>
+                            
+                            <p>The Parc and Dare Theatre will need to be transformed into a venue fit for 200 million viewers. You've been appointed as the Emergency Eurovision Coordinator. The contest is in just 3 months.</p>
+                            
+                            <p>Your first crisis: where will all the international delegations stay? Treorchy has exactly one hotel with 12 rooms.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-choices">
+                        <h4>What's your first move?</h4>
+                        <div class="choices-container">
+                            <button class="choice-btn" data-choice="1">
+                                🏠 Launch "Eurovision Homestay" - convince locals to host international stars
+                            </button>
+                            <button class="choice-btn" data-choice="2">
+                                🏕️ Set up a luxury glamping village in the Rhondda Valley
+                            </button>
+                            <button class="choice-btn" data-choice="3">
+                                🚂 Organize daily shuttle trains from Cardiff hotels
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-stats">
+                    <div class="stat">
+                        <span class="stat-label">Budget</span>
+                        <span class="stat-value">£2.5M</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Public Support</span>
+                        <span class="stat-value">85%</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Time Left</span>
+                        <span class="stat-value">89 days</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Chaos Level</span>
+                        <span class="stat-value">Moderate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story-outcomes">
+            <h2>🎯 Previous Adventures</h2>
+            <div class="outcomes-grid">
+                <div class="outcome-card success">
+                    <div class="outcome-header">
+                        <h4>🏆 Eurovision Triumph</h4>
+                        <span class="outcome-type">Success Story</span>
+                    </div>
+                    <p>You chose the homestay option and created the most intimate Eurovision ever. Mrs. Jenkins from Ystrad Road hosted the Swedish delegation and taught them to make Welsh cakes. The contest was won by a collaborative song featuring the Treorchy Male Choir. Tourism to the Rhondda increased by 400%.</p>
+                    <div class="outcome-stats">
+                        <span>Budget: £1.8M saved</span>
+                        <span>Public Support: 98%</span>
+                        <span>International Fame: Legendary</span>
+                    </div>
+                </div>
+                
+                <div class="outcome-card disaster">
+                    <div class="outcome-header">
+                        <h4>🌪️ The Great Eurovision Disaster</h4>
+                        <span class="outcome-type">Chaos Story</span>
+                    </div>
+                    <p>The glamping village was flooded by unexpected rain. The shuttle trains broke down. Somehow, this became the most beloved Eurovision ever - viewers loved the authentic Welsh weather experience and the impromptu performances in the local pubs. It's now called "The People's Eurovision."</p>
+                    <div class="outcome-stats">
+                        <span>Budget: £3.2M overspent</span>
+                        <span>Public Support: 76%</span>
+                        <span>Meme Status: Immortal</span>
+                    </div>
+                </div>
+                
+                <div class="outcome-card mystery">
+                    <div class="outcome-header">
+                        <h4>🐉 Dragon Diplomacy</h4>
+                        <span class="outcome-type">Fantasy Story</span>
+                    </div>
+                    <p>When a real dragon appeared in the Brecon Beacons, you chose to approach with traditional Welsh hospitality - offering tea and bara brith. The dragon, it turns out, was just homesick for the old days. You established the world's first Dragon Sanctuary and Wales became a magical tourism destination.</p>
+                    <div class="outcome-stats">
+                        <span>Dragon Friendship: Maximum</span>
+                        <span>Tourism Revenue: £50M annually</span>
+                        <span>Magic Level: Confirmed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="create-scenario">
+            <h2>✨ Create Your Own "What If?"</h2>
+            <div class="creator-form">
+                <div class="form-group">
+                    <label for="scenario-title">Scenario Title</label>
+                    <input type="text" id="scenario-title" placeholder="e.g., What if Cardiff became the capital of Europe?">
+                </div>
+                
+                <div class="form-group">
+                    <label for="scenario-setup">Setup</label>
+                    <textarea id="scenario-setup" rows="4" placeholder="Set the scene... What's the impossible situation?"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="scenario-choices">First Choice Options (one per line)</label>
+                    <textarea id="scenario-choices" rows="6" placeholder="Option 1: Do something bold
+Option 2: Take a cautious approach  
+Option 3: Try something completely unexpected"></textarea>
+                </div>
+                
+                <button class="btn-create">🚀 Launch Scenario</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

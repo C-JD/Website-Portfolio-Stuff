@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Microadventures Tracker</title>
+    <link rel="stylesheet" href="microadventures.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">← Back to Hub</a>
+            <h2>🚀 Microadventures Tracker</h2>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Your Local Adventure Logbook</h1>
+            <p>Document the extraordinary in the ordinary. Every hilltop, hidden stream, and starlit night has a story.</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="add-adventure">
+            <h2>📝 Log New Adventure</h2>
+            <form class="adventure-form">
+                <div class="form-group">
+                    <label for="adventure-title">Adventure Title</label>
+                    <input type="text" id="adventure-title" placeholder="e.g., Sunrise at Pen y Fan">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adventure-type">Type</label>
+                        <select id="adventure-type">
+                            <option>Wild Swimming</option>
+                            <option>Hilltop Picnic</option>
+                            <option>Stargazing</option>
+                            <option>Forest Walk</option>
+                            <option>Urban Exploration</option>
+                            <option>Photography Hunt</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="adventure-date">Date</label>
+                        <input type="date" id="adventure-date">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="adventure-location">Location</label>
+                    <input type="text" id="adventure-location" placeholder="Where did this adventure take place?">
+                </div>
+                
+                <div class="form-group">
+                    <label for="adventure-story">Your Story</label>
+                    <textarea id="adventure-story" rows="6" placeholder="Tell us about your adventure... What did you discover? How did it make you feel?"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="weather">Weather</label>
+                        <select id="weather">
+                            <option>☀️ Sunny</option>
+                            <option>⛅ Partly Cloudy</option>
+                            <option>☁️ Cloudy</option>
+                            <option>🌧️ Rainy</option>
+                            <option>❄️ Snowy</option>
+                            <option>🌫️ Foggy</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="difficulty">Difficulty</label>
+                        <select id="difficulty">
+                            <option>🟢 Easy</option>
+                            <option>🟡 Moderate</option>
+                            <option>🔴 Challenging</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-submit">Add to Logbook</button>
+            </form>
+        </section>
+
+        <section class="adventures-log">
+            <h2>📖 Adventure Logbook</h2>
+            
+            <div class="adventure-entry">
+                <div class="entry-header">
+                    <h3>🌅 Dawn Swim at Llangorse Lake</h3>
+                    <div class="entry-meta">
+                        <span class="date">15 March 2025</span>
+                        <span class="type">Wild Swimming</span>
+                        <span class="weather">🌫️ Foggy</span>
+                    </div>
+                </div>
+                <div class="entry-content">
+                    <p><strong>Location:</strong> Llangorse Lake, Brecon Beacons</p>
+                    <p>The mist hung low over the water like a secret being whispered. At 6 AM, I was the only soul brave (or mad) enough to slip into the lake. The cold was shocking but invigorating - like being baptized by the mountains themselves. A heron watched me from the reeds, unimpressed by my splashing. By the time I emerged, the sun had begun to burn through the fog, revealing the Brecon Beacons in all their glory.</p>
+                    <div class="entry-tags">
+                        <span class="tag">🟡 Moderate</span>
+                        <span class="tag">Early Morning</span>
+                        <span class="tag">Wildlife Spotting</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="adventure-entry">
+                <div class="entry-header">
+                    <h3>⭐ Stargazing at Pen y Fan</h3>
+                    <div class="entry-meta">
+                        <span class="date">8 March 2025</span>
+                        <span class="type">Stargazing</span>
+                        <span class="weather">☀️ Clear</span>
+                    </div>
+                </div>
+                <div class="entry-content">
+                    <p><strong>Location:</strong> Pen y Fan Summit</p>
+                    <p>Climbed up in the dark with just a headtorch and thermos of tea. The effort was worth it - the Milky Way stretched across the sky like spilled flour on a black tablecloth. Saw three shooting stars and made three wishes (one for more adventures like this). The silence up there is profound - you can hear your own heartbeat and the distant bleating of sheep in the valleys below.</p>
+                    <div class="entry-tags">
+                        <span class="tag">🔴 Challenging</span>
+                        <span class="tag">Night Adventure</span>
+                        <span class="tag">Astronomy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="adventure-entry">
+                <div class="entry-header">
+                    <h3>🥪 Hilltop Picnic at Castell Coch</h3>
+                    <div class="entry-meta">
+                        <span class="date">2 March 2025</span>
+                        <span class="type">Hilltop Picnic</span>
+                        <span class="weather">⛅ Partly Cloudy</span>
+                    </div>
+                </div>
+                <div class="entry-content">
+                    <p><strong>Location:</strong> Castell Coch, Cardiff</p>
+                    <p>Packed bara brith and Welsh cakes for a fairy-tale picnic beside the red castle. The view over the Taff Valley was spectacular, and I felt like I was dining in a medieval romance novel. A red kite circled overhead, probably hoping for crumbs. Sometimes the best adventures are the ones that make you feel like you're in a story.</p>
+                    <div class="entry-tags">
+                        <span class="tag">🟢 Easy</span>
+                        <span class="tag">Historical</span>
+                        <span class="tag">Local Food</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="adventure-stats">
+            <h2>📊 Your Adventure Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">23</div>
+                    <div class="stat-label">Total Adventures</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Wild Swims</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Hilltop Visits</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Stargazing Nights</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

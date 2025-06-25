@@ -1,0 +1,988 @@
+/* Welsh Culture Starter Kit Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background: linear-gradient(135deg, #ecfdf5 0%, #10b981 100%);
+    min-height: 100vh;
+}
+
+/* Navigation */
+.navbar {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #10b981;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar h2 {
+    color: white;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #065f46;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+}
+
+/* Category Tabs */
+.culture-categories {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.category-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tab {
+    background: white;
+    border: 2px solid #e5e7eb;
+    color: #6b7280;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.tab.active,
+.tab:hover {
+    background: #10b981;
+    color: white;
+    border-color: #10b981;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.content-section h2 {
+    color: #065f46;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Language Section */
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.language-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid #e2e8f0;
+}
+
+.language-card.basics {
+    border-color: #10b981;
+    background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
+}
+
+.language-card.slang {
+    border-color: #f59e0b;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+.language-card.twisters {
+    border-color: #ef4444;
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.language-card h3 {
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.phrase-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.phrase {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #10b981;
+}
+
+.welsh {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #065f46;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.english {
+    color: #374151;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.pronunciation {
+    color: #6b7280;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.slang-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.slang-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #f59e0b;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.slang-item strong {
+    color: #92400e;
+}
+
+.twister-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.twister {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #ef4444;
+}
+
+.twister-welsh {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #991b1b;
+    margin-bottom: 0.5rem;
+    word-break: break-all;
+}
+
+.twister-english {
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.twister-meaning {
+    color: #6b7280;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Food Section */
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.food-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid #e2e8f0;
+}
+
+.food-card.traditional {
+    border-color: #dc2626;
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.food-card.modern {
+    border-color: #7c3aed;
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+}
+
+.food-card.ingredients {
+    border-color: #059669;
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+}
+
+.food-card h3 {
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.dish-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dish {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #dc2626;
+}
+
+.dish h4 {
+    color: #991b1b;
+    margin-bottom: 0.5rem;
+}
+
+.dish p {
+    color: #374151;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.recipe-link {
+    background: #dc2626;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.recipe-link:hover {
+    background: #b91c1c;
+}
+
+.restaurant-list,
+.ingredient-list {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.restaurant h4 {
+    color: #581c87;
+    margin-bottom: 1rem;
+}
+
+.restaurant ul {
+    list-style: none;
+    padding: 0;
+}
+
+.restaurant li {
+    padding: 0.5rem 0;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.restaurant li:last-child {
+    border-bottom: none;
+}
+
+.restaurant strong {
+    color: #581c87;
+}
+
+.ingredient-list {
+    border-left: 4px solid #059669;
+}
+
+.ingredient {
+    padding: 0.75rem 0;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.ingredient:last-child {
+    border-bottom: none;
+}
+
+.ingredient strong {
+    color: #047857;
+}
+
+/* Music Section */
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.music-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid #e2e8f0;
+}
+
+.music-card.traditional {
+    border-color: #0891b2;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.music-card.contemporary {
+    border-color: #7c2d12;
+    background: linear-gradient(135deg, #fef7ed 0%, #fed7aa 100%);
+}
+
+.music-card.festivals {
+    border-color: #be185d;
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+}
+
+.music-card h3 {
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.music-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.music-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #0891b2;
+}
+
+.music-item h4 {
+    color: #0c4a6e;
+    margin-bottom: 0.5rem;
+}
+
+.music-item p {
+    color: #374151;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.music-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.music-item li {
+    padding: 0.25rem 0;
+    color: #374151;
+}
+
+.listen-link {
+    background: #0891b2;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.listen-link:hover {
+    background: #0e7490;
+}
+
+.artist-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.artist {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #7c2d12;
+}
+
+.artist h4 {
+    color: #7c2d12;
+    margin-bottom: 1rem;
+}
+
+.artist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.artist li {
+    padding: 0.5rem 0;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.artist li:last-child {
+    border-bottom: none;
+}
+
+.artist strong {
+    color: #7c2d12;
+}
+
+.festival-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.festival {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #be185d;
+}
+
+.festival h4 {
+    color: #be185d;
+    margin-bottom: 0.5rem;
+}
+
+.festival p {
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Media Section */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.media-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid #e2e8f0;
+}
+
+.media-card.tv-shows {
+    border-color: #7c3aed;
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+}
+
+.media-card.films {
+    border-color: #dc2626;
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.media-card.welsh-language {
+    border-color: #059669;
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+}
+
+.show-list,
+.film-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.show,
+.film {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #7c3aed;
+}
+
+.film {
+    border-left-color: #dc2626;
+}
+
+.show h4,
+.film h4 {
+    color: #581c87;
+    margin-bottom: 0.5rem;
+}
+
+.film h4 {
+    color: #991b1b;
+}
+
+.show p,
+.film p {
+    color: #374151;
+    line-height: 1.6;
+}
+
+.show-quote {
+    background: #f3e8ff;
+    color: #581c87;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.welsh-media-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.media-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #059669;
+}
+
+.media-item h4 {
+    color: #047857;
+    margin-bottom: 0.5rem;
+}
+
+.media-item p {
+    color: #374151;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.media-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.media-item li {
+    padding: 0.25rem 0;
+    color: #374151;
+}
+
+/* Traditions Section */
+.traditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.tradition-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid #e2e8f0;
+}
+
+.tradition-card.celebrations {
+    border-color: #f59e0b;
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+}
+
+.tradition-card.symbols {
+    border-color: #dc2626;
+    background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+}
+
+.tradition-card.folklore {
+    border-color: #7c3aed;
+    background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+}
+
+.celebration-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.celebration {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #f59e0b;
+}
+
+.celebration h4 {
+    color: #92400e;
+    margin-bottom: 0.5rem;
+}
+
+.celebration p {
+    color: #374151;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.tradition-details {
+    background: #fffbeb;
+    padding: 0.75rem;
+    border-radius: 6px;
+    color: #92400e;
+    font-size: 0.9rem;
+}
+
+.tradition-details strong {
+    color: #78350f;
+}
+
+.symbol-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.symbol {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #dc2626;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.symbol-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.symbol-info h4 {
+    color: #991b1b;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.symbol-info p {
+    color: #374151;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.folklore-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.folklore-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #7c3aed;
+}
+
+.folklore-item h4 {
+    color: #581c87;
+    margin-bottom: 0.5rem;
+}
+
+.folklore-item p {
+    color: #374151;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Apps Section */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.app-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid #e2e8f0;
+}
+
+.app-card.language-apps {
+    border-color: #0891b2;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+}
+
+.app-card.cultural-apps {
+    border-color: #7c2d12;
+    background: linear-gradient(135deg, #fef7ed 0%, #fed7aa 100%);
+}
+
+.app-card.online-resources {
+    border-color: #059669;
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+}
+
+.app-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.app {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #0891b2;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.app-card.cultural-apps .app {
+    border-left-color: #7c2d12;
+}
+
+.app-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.app-info h4 {
+    color: #0c4a6e;
+    margin-bottom: 0.5rem;
+}
+
+.app-card.cultural-apps .app-info h4 {
+    color: #7c2d12;
+}
+
+.app-info p {
+    color: #374151;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.app-rating {
+    font-size: 0.9rem;
+}
+
+.resource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.resource {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #059669;
+}
+
+.resource h4 {
+    color: #047857;
+    margin-bottom: 0.5rem;
+}
+
+.resource p {
+    color: #374151;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.resource-link {
+    background: #059669;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.resource-link:hover {
+    background: #047857;
+}
+
+/* Progress Tracker */
+.progress-tracker {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.progress-tracker h2 {
+    color: #065f46;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.progress-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.progress-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 2px solid #d1fae5;
+}
+
+.progress-card h3 {
+    color: #065f46;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill span {
+    color: #374151;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.skill-bar {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.knowledge-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.knowledge-item {
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.knowledge-item.completed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.knowledge-item:not(.completed) {
+    background: #f3f4f6;
+    color: #6b7280;
+}
+
+.media-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.checklist-item {
+    padding: 0.75rem;
+    background: #f0fdf4;
+    border-radius: 8px;
+    color: #166534;
+    border-left: 4px solid #10b981;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .category-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+    
+    .tab {
+        flex-shrink: 0;
+    }
+    
+    .language-grid,
+    .food-grid,
+    .music-grid,
+    .media-grid,
+    .traditions-grid,
+    .apps-grid,
+    .progress-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .symbol {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .app {
+        flex-direction: column;
+        text-align: center;
+    }
+}
